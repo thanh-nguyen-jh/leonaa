@@ -29,7 +29,8 @@ body {
 }
 
 .navigation > .right-navigation-box {
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 
 .navigation > aside > .button-box > .icon-button {
@@ -184,4 +185,37 @@ body {
         var(--dark-purple) 0%,
         var(--light-purple) 100%
     );
+}
+
+/* Responsive */
+/* Mobile */
+.navigation > aside > .collapse-button {
+    width: 24px;
+    height: 24px;
+    padding: 8px 8px 9px 9px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.navigation > aside > .collapse-button > .line {
+    height: 1px;
+    margin: 3.5px 0 0;
+    border: solid 1px var(--dark-purple);
+    background-color: var(--dark-purple);
+}
+
+.navigation > .mobile-navigation {
+    position: absolute;
+    right: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navigation > .right-navigation-box {
+        display: flex;
+    }
+
+    .navigation > .mobile-navigation {
+        position: relative;
+        display: none;
+    }
 }
