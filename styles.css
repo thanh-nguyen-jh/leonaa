@@ -9,9 +9,179 @@
     background: transparent;
 }
 
-body {
-    background-color: darkgoldenrod;
+/* Set color variables */
+:root {
+    --white: #fff;
+    --dark-purple: #4b0082;
+    --light-purple: #af60bc;
 }
 
-.logo {
+body {
+    background-color: darkgoldenrod;
+    /* Test */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 27px;
+}
+
+.navigation > .right-navigation-box {
+    display: flex;
+}
+
+.navigation > aside > .button-box > .icon-button {
+    display: flex;
+    align-items: center;
+
+    width: 251px;
+    height: 41px;
+    margin: 0 8px 0 0;
+    border: solid 1px var(--white);
+}
+
+.navigation > aside > .button-box > .icon-button > .text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 13px;
+    margin-left: 11px;
+}
+
+.navigation > aside > .button-box > .icon-button > .arrow-icon {
+    margin-left: 35px;
+}
+
+.navigation > aside > .button-box > .purple-button {
+    width: 250px;
+    height: 29px;
+    background: linear-gradient(
+        to left,
+        var(--dark-purple) 0%,
+        var(--light-purple) 100%
+    );
+
+    margin-left: 12px;
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.navigation > aside > .button-box > .purple-button > .add-icon {
+    margin-left: 16px;
+}
+
+.navigation > aside > .button-box > .purple-button > .text {
+    margin-left: 10px;
+}
+
+.navigation > aside > .second-box {
+    margin-left: 40px;
+}
+
+.navigation > .right-navigation-box > .about-box {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+    padding-top: 12px;
+    margin-left: 44px;
+}
+
+.navigation > .right-navigation-box > .about-box > .divider {
+    width: 126px;
+    height: 0.1px;
+    margin: 12px 0 12px;
+    border: solid 1px var(--dark-purple);
+}
+
+.navigation > .right-navigation-box > .about-box > .item {
+    margin-bottom: 11px;
+}
+
+.navigation > .right-navigation-box > .language-box {
+    display: flex;
+
+    color: var(--white);
+    padding-top: 12px;
+    margin-left: 44px;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-1 {
+    margin-right: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-2 {
+    margin-right: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-1 > .circle {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    font-size: 13px;
+    padding: 6px 6px 6px 5px;
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 6px;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-2 > .circle {
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    font-size: 13px;
+    padding: 6px 6px 6px 5px;
+    height: 30px;
+    width: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-1 > .large {
+    font-size: 15px;
+    padding: 10px 10px 10px 11px;
+    height: 40px;
+    width: 40px;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-2 > .large {
+    font-size: 15px;
+    padding: 10px 10px 10px 11px;
+    height: 40px;
+    width: 40px;
+}
+
+.navigation > .right-navigation-box > .language-box > .column-1 > .active {
+    background: linear-gradient(
+        to left,
+        var(--dark-purple) 0%,
+        var(--light-purple) 100%
+    );
+}
+
+.navigation > .right-navigation-box > .language-box > .column-2 > .active {
+    background: linear-gradient(
+        to left,
+        var(--dark-purple) 0%,
+        var(--light-purple) 100%
+    );
 }
