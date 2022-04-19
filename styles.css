@@ -19,13 +19,9 @@
     --light-purple-2: rgba(121, 67, 143, 0.8);
     --grey: rgba(35, 31, 32, 0.5);
     --light-grey: rgba(255, 255, 255, 0.4);
+    --light-grey-2: #f5f5f5;
     --orange: #ffb029;
     --light-orange: #ffc966;
-}
-
-body {
-    /* background-image: url("./assets/landingPage/hero-background-1440.jpg");
-    background-repeat: no-repeat; */
 }
 
 body > .background-image {
@@ -206,7 +202,7 @@ body > .background-image {
 
 /* Hero section */
 .hero-section {
-    padding: 137px 20px 0px 20px;
+    padding: 137px 0px 0px 0px;
 
     background-image: url("./assets/landingPage/hero-background-1440.jpg");
     background-repeat: no-repeat;
@@ -251,6 +247,9 @@ body > .background-image {
 .hero-section > .information-box {
     border: solid 0.5px var(--white);
     background-color: var(--light-purple-2);
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .hero-section > .information-box > .search-box {
@@ -511,6 +510,100 @@ body > .background-image {
     margin-bottom: 4px;
 }
 
+.hero-section > .universe-box {
+    background-color: var(--light-grey-2);
+
+    margin-top: 38px;
+    padding: 22px 20px 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section > .universe-box > .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: 0.84px;
+    color: var(--dark-purple);
+}
+
+.hero-section > .universe-box > .sub-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.98px;
+    color: var(--dark-purple);
+}
+
+.hero-section > .universe-box > .square-box-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 8px;
+
+    margin-top: 31px;
+}
+
+.hero-section > .universe-box > .square-box-group > .purple {
+    background-color: var(--dark-purple);
+    opacity: 0.4;
+}
+
+.hero-section > .universe-box > .square-box-group > .square-box {
+    height: 136px;
+    width: 136px;
+}
+
+.hero-section > .universe-box > .square-box-group > .square-box > .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.11;
+    letter-spacing: normal;
+    color: var(--white);
+
+    margin-top: 50%;
+    margin-left: 12px;
+}
+
+.yellow-box {
+    border: solid 1px var(--orange);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yellow-box > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.77px;
+    text-align: center;
+    color: var(--orange);
+}
+
+.hero-section > .universe-box > .square-box-group > .mobile-mode {
+}
+
+.hero-section > .universe-box > .desktop-mode {
+    display: none;
+}
+
 /* Responsive */
 /* Mobile */
 .navigation > aside > .collapse-button {
@@ -740,5 +833,59 @@ body > .background-image {
 
     .hero-section > .introduction-box > .group-dot {
         display: block;
+    }
+
+    .hero-section > .universe-box {
+        padding-bottom: 131px;
+    }
+
+    .hero-section > .universe-box > .title {
+        font-family: "Open Sans", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        text-align: center;
+        color: var(--dark-purple);
+    }
+
+    .hero-section > .universe-box > .sub-title {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 3.4px;
+        text-align: center;
+    }
+
+    .hero-section > .universe-box > .square-box-group > .square-box {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .hero-section > .universe-box > .square-box-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 8px;
+
+        margin-top: 31px;
+    }
+
+    .hero-section > .universe-box > .square-box-group > .mobile-mode {
+        display: none;
+    }
+
+    .hero-section > .universe-box > .desktop-mode {
+        display: block;
+        width: 555px;
+        padding-top: 17px;
+        padding-bottom: 16px;
+
+        margin-top: 100px;
     }
 }
