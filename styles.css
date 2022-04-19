@@ -24,8 +24,15 @@
 }
 
 body {
-    background-image: url("./assets/landingPage/hero-background-1440.jpg");
-    background-repeat: no-repeat;
+    /* background-image: url("./assets/landingPage/hero-background-1440.jpg");
+    background-repeat: no-repeat; */
+}
+
+body > .background-image {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
 }
 
 .navigation {
@@ -199,7 +206,15 @@ body {
 
 /* Hero section */
 .hero-section {
-    margin: 137px 20px 0px 20px;
+    padding: 137px 20px 0px 20px;
+
+    background-image: url("./assets/landingPage/hero-background-1440.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+
+    height: 100vh;
+
+    margin-top: -89px;
 }
 
 /* Header of hero section */
@@ -364,6 +379,138 @@ body {
     background-color: var(--light-orange);
 }
 
+.hero-section > .introduction-box {
+    color: var(--orange);
+
+    margin-top: 244px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-section > .introduction-box > .large {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    color: var(--dark-purple);
+}
+
+.hero-section > .introduction-box > .small {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3.4px;
+    color: var(--dark-purple);
+
+    margin-bottom: 16px;
+}
+
+.hero-section > .introduction-box > .group-dot {
+    display: none;
+}
+
+.hero-section > .introduction-box > .flexible-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section > .introduction-box > .flexible-box > .circle-info-box {
+    background-color: var(--orange);
+
+    width: 254px;
+    height: 254px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section
+    > .introduction-box
+    > .flexible-box
+    > .circle-info-box
+    > .info-box {
+    color: var(--white);
+
+    margin-left: 80px;
+}
+
+.hero-section
+    > .introduction-box
+    > .flexible-box
+    > .circle-info-box
+    > .info-box
+    > .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.21;
+    letter-spacing: 0.19px;
+    color: var(--white);
+}
+
+.hero-section
+    > .introduction-box
+    > .flexible-box
+    > .circle-info-box
+    > .info-box
+    > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    letter-spacing: 0.21px;
+    color: var(--white);
+
+    margin-left: -45px;
+}
+
+.hero-section > .introduction-box > .flexible-box > .circle-info-box {
+    position: relative;
+}
+
+.hero-section
+    > .introduction-box
+    > .flexible-box
+    > .circle-info-box
+    > .icon-image-info {
+    position: absolute;
+    left: -40px;
+    top: -10px;
+}
+
+.small-dot {
+    width: 3px;
+    height: 3px;
+    margin: 0 6px;
+    background-color: var(--orange);
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
 /* Responsive */
 /* Mobile */
 .navigation > aside > .collapse-button {
@@ -396,8 +543,13 @@ body {
         display: none;
     }
 
+    .hero-section {
+        margin-top: -207px;
+    }
+
     .hero-section > header {
         padding-bottom: 47px;
+        padding-top: 85px;
     }
 
     .hero-section > header > .italic-text {
@@ -576,5 +728,17 @@ body {
         margin-left: 43px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .hero-section > .introduction-box {
+        margin-top: 185px;
+    }
+
+    .hero-section > .introduction-box > .flexible-box {
+        flex-direction: row;
+    }
+
+    .hero-section > .introduction-box > .group-dot {
+        display: block;
     }
 }
