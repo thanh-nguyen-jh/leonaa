@@ -12,13 +12,18 @@
 /* Set color variables */
 :root {
     --white: #fff;
+    --purple: #79438f;
     --dark-purple: #4b0082;
     --light-purple: #af60bc;
+    --light-purple-2: rgba(121, 67, 143, 0.8);
+    --grey: rgba(35, 31, 32, 0.5);
+    --light-grey: rgba(255, 255, 255, 0.4);
+    --orange: #ffb029;
 }
 
 body {
-    background-color: darkgoldenrod;
-    /* Test */
+    background-image: url("./assets/landingPage/hero-background-1440.jpg");
+    background-repeat: no-repeat;
 }
 
 .navigation {
@@ -29,7 +34,6 @@ body {
 }
 
 .navigation > .right-navigation-box {
-    /* display: flex; */
     display: none;
 }
 
@@ -187,6 +191,162 @@ body {
     );
 }
 
+/* Hero section */
+.hero-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Header of hero section */
+.hero-section > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section > header > .italic-text {
+    text-shadow: 0 0 14px var(--grey);
+    font-family: "OpenSans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--white);
+}
+
+.hero-section > header > .capitalize-text {
+    text-shadow: 0 0 14px var(--grey);
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section > .information-box {
+    border: solid 0.5px var(--white);
+    background-color: var(--light-purple-2);
+}
+
+.hero-section > .information-box > .search-box {
+    opacity: inherit;
+}
+
+.hero-section > .information-box > .search-box > .name {
+    text-shadow: 0 0 14px rgba(35, 31, 32, 0.5);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.hero-section > .information-box > .search-box > .search-input {
+    height: 33px;
+    margin: 12px 0 0;
+    border-radius: 8px;
+    background-color: var(--light-grey);
+    width: calc(100% - 16px);
+
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-weight: 300;
+    opacity: 1; /* Firefox */
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.2px;
+
+    padding-left: 15px;
+}
+
+.hero-section > .information-box > .search-box {
+    padding: 12px 16px 23px 16px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-weight: 300;
+    opacity: 1; /* Firefox */
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.hero-section > .information-box > .extended-box {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: solid 0.5px var(--white);
+
+    height: 64px;
+}
+
+.hero-section > .information-box > .extended-box > .more-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    margin-left: 16px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+
+.hero-section
+    > .information-box
+    > .extended-box
+    > .more-info
+    > .arrow-button-box {
+    background-color: var(--orange);
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 16px;
+}
+
+.hero-section > .information-box > .extended-box > .search-button {
+    flex: 1;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--orange);
+}
+
 /* Responsive */
 /* Mobile */
 .navigation > aside > .collapse-button {
@@ -217,5 +377,18 @@ body {
     .navigation > .mobile-navigation {
         position: relative;
         display: none;
+    }
+
+    .hero-section > header > .italic-text {
+        font-size: 53px;
+    }
+
+    .hero-section > header > .capitalize-text {
+        flex-direction: row;
+        font-size: 22px;
+    }
+
+    body {
+        background-size: cover;
     }
 }
