@@ -693,6 +693,7 @@ body > .background-image {
 
 .hero-section > .local-expert {
     background-color: var(--light-purple-3);
+    padding-bottom: 83px;
 }
 
 .hero-section > .local-expert > .sub-title {
@@ -1093,6 +1094,10 @@ footer > .reference {
 }
 
 footer > .flexible-box > .element:not(:first-child) {
+    margin-top: 32px;
+}
+
+.mt-32 {
     margin-top: 32px;
 }
 
@@ -1501,9 +1506,5 @@ footer > .flexible-box > .element:not(:first-child) {
 
     .small {
         font-size: 13px;
-    }
-
-    .mt-32 {
-        margin-top: 32px;
     }
 }
