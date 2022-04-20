@@ -554,9 +554,64 @@ body > .background-image {
     margin-top: 31px;
 }
 
-.hero-section > .universe-box > .square-box-group > .purple {
+.hero-section > .universe-box > .square-box-group > .square-box {
+    position: relative;
+}
+
+.hero-section > .universe-box > .square-box-group > .square-box > .purple {
     background-color: var(--dark-purple);
     opacity: 0.4;
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+}
+
+.hero-section > .universe-box > .square-box-group > .gastronomy {
+    background-image: url("./assets/landingPage/theUniverses/gastronomy.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .sport-and-adventure {
+    background-image: url("./assets/landingPage/theUniverses/sportAndAdventure.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .arts-and-music {
+    background-image: url("./assets/landingPage/theUniverses/artsAndMusic.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .culture-and-heritage {
+    background-image: url("./assets/landingPage/theUniverses/cultureAndHeritage.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .language-and-educaion {
+    background-image: url("./assets/landingPage/theUniverses/languageAndEducation.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .fauna-and-flora {
+    background-image: url("./assets/landingPage/theUniverses/faunaAndFlora.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .nature-and-wellness {
+    background-image: url("./assets/landingPage/theUniverses/natureAndWellness.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .science-and-technology {
+    background-image: url("./assets/landingPage/theUniverses/scienceAndTechnology.jpg");
+    background-size: cover;
+}
+
+.hero-section > .universe-box > .square-box-group > .eco-friendly {
+    background-image: url("./assets/landingPage/theUniverses/ecoFriendly.jpg");
+    background-size: cover;
 }
 
 .hero-section > .universe-box > .square-box-group > .square-box {
@@ -564,7 +619,12 @@ body > .background-image {
     width: 136px;
 }
 
-.hero-section > .universe-box > .square-box-group > .square-box > .title {
+.hero-section
+    > .universe-box
+    > .square-box-group
+    > .square-box
+    > .purple
+    > .title {
     font-family: "Open Sans", sans-serif;
     font-size: 19px;
     font-weight: normal;
