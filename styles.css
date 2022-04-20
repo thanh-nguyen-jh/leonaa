@@ -1013,10 +1013,6 @@ body > .background-image {
 .hero-section > .our-values > .flexible-box > .element > .small-circle {
     width: 178px;
     height: 178px;
-    padding: 0 0 8px;
-    /* opacity: 0.6; */
-    /* mix-blend-mode: hard-light; */
-    background-color: var(--orange);
     border-radius: 50%;
 
     display: flex;
@@ -1025,6 +1021,38 @@ body > .background-image {
 
     z-index: -1;
     margin-left: 105px;
+
+    position: relative;
+}
+
+.hero-section > .our-values > .flexible-box > .element > .eco-friendly {
+    background-image: url(./assets/landingPage/whyLeonaa1.jpg);
+    background-size: cover;
+}
+
+.hero-section > .our-values > .flexible-box > .element > .local {
+    background-image: url(./assets/landingPage/whyLeonaa2.jpg);
+    background-size: cover;
+}
+
+.hero-section > .our-values > .flexible-box > .element > .custo {
+    background-image: url(./assets/landingPage/whyLeonna3.jpg);
+    background-size: cover;
+}
+
+.hero-section
+    > .our-values
+    > .flexible-box
+    > .element
+    > .small-circle
+    > .orange-layer {
+    background-color: var(--orange);
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    position: absolute;
 }
 
 .hero-section > .our-values > .flexible-box > .element > .large-circle {
