@@ -619,12 +619,7 @@ body > .background-image {
     width: 136px;
 }
 
-.hero-section
-    > .universe-box
-    > .square-box-group
-    > .square-box
-    > .purple
-    > .title {
+.hero-section > .universe-box > .square-box-group > .square-box > .title {
     font-family: "Open Sans", sans-serif;
     font-size: 19px;
     font-weight: normal;
@@ -636,6 +631,20 @@ body > .background-image {
 
     margin-top: 50%;
     margin-left: 12px;
+}
+
+.hero-section > .universe-box > .square-box-group > .square-box > .circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10%;
+    right: 10%;
 }
 
 .yellow-box {
@@ -1566,5 +1575,19 @@ footer > .flexible-box > .element:not(:first-child) {
 
     .small {
         font-size: 13px;
+    }
+
+    .hero-section > .universe-box > .square-box-group > .square-box > .circle {
+        height: 39px;
+        width: 39px;
+    }
+
+    .hero-section
+        > .universe-box
+        > .square-box-group
+        > .square-box
+        > .circle
+        > img {
+        width: 15px;
     }
 }
