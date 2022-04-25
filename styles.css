@@ -753,6 +753,10 @@ body > .background-image {
     align-items: center;
 }
 
+.activities-box > .icons-box > .element > .circle-icon:hover {
+    background-color: var(--dark-purple);
+}
+
 .activities-box > .icons-box > .element > .title {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -773,12 +777,11 @@ body > .background-image {
     > .element
     > .circle-icon
     > .icon-image {
-    width: 50px;
+    width: 30px;
 }
 
 .local-expert {
     background-color: var(--light-purple-3);
-    padding-bottom: 83px;
 
     position: relative;
 }
@@ -968,6 +971,51 @@ body > .background-image {
     color: var(--orange);
 }
 
+.local-expert > .carosel-box > .element > .button-meet-me:hover {
+    cursor: pointer;
+}
+
+.local-expert {
+    padding-bottom: 83px;
+}
+
+.local-expert > .carosel-box > .element:hover > .name {
+    color: var(--white);
+}
+
+.local-expert > .carosel-box > .element:hover > .button-meet-me {
+    background-color: var(--orange);
+}
+
+.local-expert > .carosel-box > .element:hover > .button-meet-me > .text {
+    color: var(--white);
+}
+
+.local-expert > .carosel-box > .element {
+    position: relative;
+}
+
+.local-expert > .carosel-box > .element > .background-layer {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    position: absolute;
+}
+
+.local-expert > .carosel-box > .element:hover {
+    background-color: transparent;
+}
+
+.local-expert > .carosel-box > .element:hover > .background-layer {
+    z-index: -1;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+    background-color: var(--white);
+}
+
 .our-values {
     padding: 26px 20px 66px 20px;
 
@@ -1110,6 +1158,7 @@ footer > .logo-image {
 footer > .flexible-box {
     display: flex;
     flex-direction: column;
+    width: 50vw;
 
     margin-top: 53px;
     padding-left: 43px;
@@ -1574,6 +1623,7 @@ footer > .flexible-box > .element:not(:first-child) {
         flex-direction: row;
         justify-content: space-around;
         margin-top: 80px;
+        align-items: baseline;
     }
 
     footer > .logo-image {
