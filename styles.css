@@ -626,6 +626,10 @@ body > .background-image {
     width: 136px;
 }
 
+.universe-box > .square-box-group > .square-box:hover > .purple {
+    display: none;
+}
+
 .universe-box > .square-box-group > .square-box > .title {
     font-family: "Open Sans", sans-serif;
     font-size: 19px;
@@ -661,6 +665,11 @@ body > .background-image {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.yellow-box:hover {
+    cursor: pointer;
+    border: solid 3px var(--orange);
 }
 
 .yellow-box > p {
@@ -770,6 +779,27 @@ body > .background-image {
 .local-expert {
     background-color: var(--light-purple-3);
     padding-bottom: 83px;
+
+    position: relative;
+}
+
+.local-expert > .background-layer {
+    background-image: url("./assets/landingPage/ourLocalExpertsBg-min.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.local-expert > .purple-layer {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--purple);
+    opacity: 0.65;
 }
 
 .local-expert > .sub-title {
@@ -1237,6 +1267,8 @@ footer > .flexible-box > .element:not(:first-child) {
 
     .hero-section > .information-box > .extended-box > .more-info-desktop {
         display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .hero-section
@@ -1442,7 +1474,7 @@ footer > .flexible-box > .element:not(:first-child) {
 
     .universe-box > .desktop-mode {
         display: block;
-        width: 555px;
+        width: 400px;
         padding-top: 17px;
         padding-bottom: 16px;
 
