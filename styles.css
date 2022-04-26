@@ -1338,7 +1338,9 @@ footer > .flexible-box > .element:not(:first-child) {
         align-items: center;
 
         height: 96px;
-        /* width: 1350px; */
+        max-width: 1350px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-section > .information-box > .search-box {
