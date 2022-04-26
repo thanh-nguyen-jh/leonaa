@@ -897,6 +897,25 @@ body > .background-image {
     align-items: center;
 }
 
+/* .local-expert > .carosel-box > .element > .place > .map-icon {
+    filter: invert(71%) sepia(91%) saturate(1094%) hue-rotate(337deg)
+        brightness(104%) contrast(100%);
+} */
+
+.local-expert > .carosel-box > .element > .place > .map-icon {
+    width: 9px;
+    height: 14px;
+    background-image: url(./assets/icons/mapIcon.svg);
+    background-repeat: no-repeat;
+}
+
+.local-expert > .carosel-box > .element:hover > .place > .map-icon {
+    width: 9px;
+    height: 14px;
+    background-image: url(./assets/icons/mapIconHover.svg);
+    background-repeat: no-repeat;
+}
+
 .local-expert > .carosel-box > .element > .place > .text {
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
