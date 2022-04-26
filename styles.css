@@ -757,6 +757,12 @@ body > .background-image {
     background-color: var(--dark-purple);
 }
 
+.activities-box > .icons-box > .element > .circle-icon:hover > img {
+    /* change image color to white */
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
 .activities-box > .icons-box > .element > .title {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -777,7 +783,16 @@ body > .background-image {
     > .element
     > .circle-icon
     > .icon-image {
-    width: 30px;
+    width: 50%;
+}
+
+.hero-section
+    > .activities-box
+    > .icons-box
+    > .element:hover
+    > .circle-icon
+    > .icon-image {
+    fill: red;
 }
 
 .local-expert {
