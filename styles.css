@@ -1194,9 +1194,6 @@ footer > .flexible-box {
     padding-right: 66px;
 }
 
-footer > .flexible-box > .element {
-}
-
 footer > .flexible-box > .element > .large {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
@@ -1646,6 +1643,19 @@ footer > .flexible-box > .element:not(:first-child) {
 
     .our-values > .flexible-box > .element:nth-child(2n + 1) {
         margin-top: -60px;
+    }
+
+    .our-values > .flexible-box > .element-1 > .small-circle {
+        margin-left: -24px;
+    }
+
+    .our-values > .flexible-box > .element-2 > .large-circle {
+        margin-top: -392px;
+        margin-left: -22px;
+    }
+
+    .our-values > .flexible-box > .element-2 {
+        margin-top: 395px;
     }
 
     footer > .flexible-box {
