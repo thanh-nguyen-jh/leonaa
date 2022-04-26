@@ -85,8 +85,20 @@ body > .background-image {
     color: var(--white);
 }
 
+.navigation > aside > .button-box > .purple-button {
+    display: none;
+}
+
 .navigation > aside > .button-box > .purple-button > .add-icon {
     margin-left: 16px;
+}
+
+.navigation > aside > .button-box:hover > .purple-button {
+    display: flex;
+}
+
+.navigation > aside > .button-box > .purple-button:hover {
+    cursor: pointer;
 }
 
 .navigation > aside > .button-box > .purple-button > .text {
@@ -401,6 +413,11 @@ body > .background-image {
 }
 
 .hero-section > .information-box > .extended-box > .search-button:hover {
+    cursor: pointer;
+    background-color: var(--light-orange);
+}
+
+.hero-section > .information-box > .search-button-desktop:hover {
     cursor: pointer;
     background-color: var(--light-orange);
 }
